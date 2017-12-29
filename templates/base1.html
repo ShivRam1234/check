@@ -1,0 +1,270 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block metashortdescription %}
+        {% endblock %}
+        {% block metakeywords %}
+        {% endblock %}
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,700">
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900">
+        <link type="text/css" rel="stylesheet" href="{% static 'assets/font/font-icon/font-awesome/css/font-awesome.css'%}">
+        <link type="text/css" rel="stylesheet" href="{% static 'assets/font/font-icon/flat-icon/flaticon.css' %}">
+        <!-- LIBRARY CSS-->
+        <link type="text/css" rel="stylesheet" href="{% static 'assets/libs/bootstrap/css/bootstrap.min.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'assets/libs/slick-slider/slick.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'assets/libs/slick-slider/slick-theme.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'assets/libs/custom-scroll/jquery.mCustomScrollbar.min.css' %}">
+        <!-- STYLE CSS-->
+        <link type="text/css" rel="stylesheet" href="{% static 'assets/css/layout.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'assets/css/components.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'assets/css/components-fashion.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'assets/css/block.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'assets/libs/fancybox/css/jquery.fancybox8cbb.css'%}">
+        <link type="text/css" rel="stylesheet" href="{% static 'assets/libs/fancybox/css/jquery.fancybox-buttons3447.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'assets/libs/fancybox/css/jquery.fancybox-thumbsf2ad.css' %}">
+ <style type="text/css">
+        #cent1{
+    background-color:#272727;
+    color:#fff;
+    text-transform:uppercase;
+}
+    </style>
+
+</head>
+<body>
+        <!--BEGIN PAGE LOADER-->
+        <div class="body-wrapper">
+            <!-- WRAPPER CONTENT-->
+            <div class="wrapper-content">
+                <!-- HEADER-->
+                <header>
+                    <div class="header-main">
+                        <div class="header-middle fixed-header-mobile">
+                            <div class="container">
+                                <div class="header-middle-wrapper">
+                                    <div class="menu-wrapper">
+                                        <div class="hamburger-menu style-1">
+                                            <div class="line line-1"></div>
+                                            <div class="line line-2"></div>
+                                            <div class="line line-3"></div>
+                                        </div>
+                                        <div class="logo-wrapper">
+                                            <a href="{% url 'home' %}" class="logo"><img src="{% static 'assets/images/logo/logo.png'%}" alt="" class="img-responsive" /></a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="navigation-mobile">
+                                <div class="nav-search-mobile">
+                                  <form><input type="text" placeholder="Search..." id="search1" class="searchbox1" name="search_field1" />
+
+                                  </form>
+                                  </div>
+                                <div id="search-results1" style="background-color: #ffffff;max-height: 200px;overflow-y: auto;padding: 0;font-family: Arial, Helvetica, sans-serif;font-size: medium;text-transform: uppercase;">
+                                </div>
+
+
+                                <ul class="nav navbar-nav menu-mobile">
+                                    <li><a href="{% url 'home' %}" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">Home</span></a></li>
+                                    <li><a href="{% url 'health' %}" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">Health</span></a></li>
+                                    <li><a href="{% url 'technology' %}" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">Technology</span></a></li>
+                                    <li><a href="{% url 'bollywood' %}" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">Bollywood</span></a></li>
+                                    <li><a href="{% url 'hollywood' %}" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">Hollywood</span></a></li>
+                                    <li><a href="{% url 'sport' %}" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">Sports</span></a></li>
+                                    <li><a href="{% url 'cars' %}" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">Cars</span></a></li>
+                                    <li><a href="{% url 'travel' %}" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">Travel</span></a></li>
+                                    <li><a href="{% url 'fashion' %}" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">Fashion</span></a></li>
+                                    <li><a href="{% url 'nature' %}" class="link-page"><i class="icons fa fa-angle-double-right"></i><span class="text">Nature</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-bottom fixed-header">
+                            <div class="container">
+                                <ul class="navigation nav navbar-nav">
+
+                                    <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span class="text">Health-Fitness</span></a>
+                                        <ul class="dropdown-menu dropdown-menu-1">
+                                            <li>
+                                                <a href="{% url 'health' %}" class="link-page"><i class="icons fa fa-angle-right"></i> <span class="text">Workouts</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'health' %}" class="link-page"> <i class="icons fa fa-angle-right"></i><span class="text">Fitness Tips</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'health' %}" class="link-page"> <i class="icons fa fa-angle-right"></i><span class="text">Nutrition</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'health' %}" class="link-page"> <i class="icons fa fa-angle-right"></i><span class="text">Remedies</span></a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span class="text">Technology</span></a>
+                                        <ul class="dropdown-menu dropdown-menu-1">
+                                            <li>
+                                                <a href="{% url 'technology' %}" class="link-page"><i class="icons fa fa-angle-right"></i> <span class="text">Computer</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'technology' %}" class="link-page"> <i class="icons fa fa-angle-right"></i><span class="text">Smart Phone</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'technology' %}" class="link-page"> <i class="icons fa fa-angle-right"></i><span class="text">Camera</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'technology' %}" class="link-page"> <i class="icons fa fa-angle-right"></i><span class="text">Laptop</span></a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span class="text">Bollywood</span></a>
+                                        <ul class="dropdown-menu dropdown-menu-1">
+                                            <li>
+                                                <a href="{% url 'bollywood' %}" class="link-page"><i class="icons fa fa-angle-right"></i> <span class="text">Action</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'bollywood' %}" class="link-page"> <i class="icons fa fa-angle-right"></i><span class="text">Comedy</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'bollywood' %}" class="link-page"> <i class="icons fa fa-angle-right"></i><span class="text">Drama</span></a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span class="text">Hollywood</span></a>
+                                        <ul class="dropdown-menu dropdown-menu-1">
+                                            <li>
+                                                <a href="{% url 'hollywood' %}" class="link-page"><i class="icons fa fa-angle-right"></i> <span class="text">Action</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'hollywood' %}" class="link-page"> <i class="icons fa fa-angle-right"></i><span class="text">Animation</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'hollywood' %}" class="link-page"> <i class="icons fa fa-angle-right"></i><span class="text">Comedy</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'hollywood' %}" class="link-page"> <i class="icons fa fa-angle-right"></i><span class="text">Science-Fiction</span></a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span class="text">Sports</span></a>
+                                        <ul class="dropdown-menu dropdown-menu-1">
+                                            <li>
+                                                <a href="{% url 'sport' %}" class="link-page"><i class="icons fa fa-angle-right"></i> <span class="text">Football</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'sport' %}" class="link-page"> <i class="icons fa fa-angle-right"></i><span class="text">Cricket</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'sport' %}" class="link-page"> <i class="icons fa fa-angle-right"></i><span class="text">IPL</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'sport' %}" class="link-page"> <i class="icons fa fa-angle-right"></i><span class="text">Olympics</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'sport' %}" class="link-page"> <i class="icons fa fa-angle-right"></i><span class="text">Other</span></a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="{% url 'cars' %}" class="main-menu"><span class="text">Cars</span></a>
+
+                                    </li>
+                                    <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span class="text">Travel</span></a>
+                                        <ul class="dropdown-menu dropdown-menu-1">
+                                            <li>
+                                                <a href="{% url 'travel' %}" class="link-page"><i class="icons fa fa-angle-right"></i> <span class="text">Destination</span></a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span class="text">Fashion</span></a>
+                                        <ul class="dropdown-menu dropdown-menu-1">
+                                            <li>
+                                                <a href="{% url 'fashion' %}" class="link-page"><i class="icons fa fa-angle-right"></i> <span class="text">Collection</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'fashion' %}" class="link-page"> <i class="icons fa fa-angle-right"></i><span class="text">Stars</span></a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="javascript:void(0)" class="main-menu"><span class="text">Nature</span></a>
+                                        <ul class="dropdown-menu dropdown-menu-1">
+                                            <li>
+                                                <a href="{% url 'nature' %}" class="link-page"><i class="icons fa fa-angle-right"></i> <span class="text">Nature Beauty</span></a>
+                                            </li>
+
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="button-search"><i class="icons fa fa-search"></i></div>
+                                <div class="nav-search hide">
+                               <form><input type="text" placeholder="Search..." name="search_field" class="searchbox" id="search" /></form>                                 <div id="search-results" style="background-color: #ffffff;max-height: 200px;overflow-y: auto;padding: 0;font-family: Arial, Helvetica, sans-serif;font-size: medium;text-transform: uppercase;">
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </header>
+                <!-- MAIN CONTENT-->
+            <div class="main-content">
+            {% block main-content %}
+            {% endblock %}
+            </div>
+                                    </div>
+                                </div>
+
+                <!-- FOOTER-->
+                <footer>
+                    <div class="footer-bottom">
+                        <div class="container">
+                            <div class="footer-bottom-wrapper">
+                                <div class="column-left">
+                                    <a href="{% url 'home' %}" class="logo"><img src="{% static 'assets/images/logo/logo.png' %}" alt="" class="img-responsive" /></a>
+                                    <div class="title">We Are ExamsInfo@team to give information about exam </div>
+                                </div>
+                                <div class="column-right">
+                                    <ul class="list-inline list-unstyled footer-link">
+                                        <li><a href="#" class="link">FACEBOOK</a></li>
+                                        <li><a href="#" class="link">TWITTER </a></li>
+                                        <li><a href="#" class="link">INSTAGRAM</a></li>
+                                        <li><a href="#" class="link">PINTEREST</a></li>
+                                           </ul>
+                                    <div class="copyright">Copyright 2016 Examsinfo,Designby Examsinfo</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="btn-wrapper back-to-top"><a href="#" class="btn btn-transparent"><i class="fa fa-angle-up"></i></a></div>
+
+<!-- LIBRARY JS-->
+         <script src="{% static 'assets/libs/jquery/jquery-2.2.3.min.js' %}"></script>
+        <script src="{% static 'assets/libs/bootstrap/js/bootstrap.min.js' %}"></script>
+       <script src="{% static 'assets/search.js' %}"></script>
+        <script src="{% static 'assets/search1.js' %}"></script>
+        <!--script(src="assets/libs/smooth-scroll/jquery-smoothscroll.js")-->
+        <script src="{% static 'assets/libs/slick-slider/slick.min.js' %}"></script>
+        <script src="{% static 'assets/libs/directional-hover/jquery.directional-hover.js' %}"></script>
+        <script src="{% static 'assets/libs/custom-scroll/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+        <!-- MAIN JS-->
+        <script src="{% static 'assets/js/main.js' %}">
+        </script>
+        <!-- LOADING SCRIPTS FOR PAGE-->
+        <script src="{% static 'assets/js/pages/single-post.js' %}"></script>
+    <script id="dsq-count-scr" src="//filmitouch-com.disqus.com/count.js" async></script>
+</body>
+</html>

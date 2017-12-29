@@ -1,0 +1,7 @@
+{% if statuss1.count > 0 %}
+   {% for article in statuss1 %}
+    <a href="{{ article.get_absolute_url }}" target="_blank">{{ article.title }}</a>
+    {% endfor %}
+   {% else %}
+    None to show!
+{% endif %}

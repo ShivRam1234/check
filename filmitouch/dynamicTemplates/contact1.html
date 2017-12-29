@@ -1,0 +1,12 @@
+{% if error_message %}
+    {{ error_message }}
+{% endif %}
+{% if messages %}
+    {% for message in messages %}
+        {{ message }}
+    {% endfor %}
+{% endif %}
+<form class="form-group contact-form" method="post" action="">{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>

@@ -1,0 +1,965 @@
+/**
+ * [Table of contents]
+ *
+ * [&. Content / #key]
+ * [Let press Ctrl + f and type of paste the key, then press Enter to search the content ]
+ *
+ * Summary:
+ *
+ *  0. VARIABLE LESS
+ *      - 0.1. Color
+ *  1. GLOBAL STYLE
+ *      - 1.1. BREADCRUMB & BUTTON & LINE
+ *      - 1.2. HEADER AND SUB-HEADER
+ *      - 1.3. TEXT-DESCRIPTION
+ *      - 1.4. CONTACT-FORM
+ *      - 1.5. SIDEBAR
+ *  2. WIDGET
+ *      - 2.1. RECENT POSTS
+ *      - 2.2. CATEGORY & ARCHIVE
+ *      - 2.3. TAGS
+ *  3. PAGE
+ *      - 3.1. PAGES 404
+ *      - 3.2. FAQ
+ *      - 3.3. GALLERY
+ *      - 3.4. Faqs
+ *      - 3.5. Contact Us
+ *      - 3.6. 404
+ *      - 3.7. ABOUT US
+ *      - 3.8. BLOG LIST
+ *      - 3.9. BLOG DETAIL
+ *      - 3.10. CATEGORY
+ *      - 3.11. AUTHORS LIST
+ *      - 3.12. MODAL SINGLE POST
+ *  4. PLUGIN
+ *      - 4.1. jQuery Plugin 1
+ *      - 4.2. jQuery Plugin 2
+ *  5. RESPONSIVE
+ */
+
+/*----------  0.1. Color  ----------*/
+
+.technology a:hover,
+.technology a:hover .number,
+.technology .label-wrapper .label-topic,
+.technology .dropdown-menu li:hover > .link-page,
+.technology .button-search .icons:hover,
+.technology .catelogy-item .link,
+.technology .post-number,
+.technology .link-page:hover,
+.technology .link-page:focus,
+.technology .dropdown:hover .main-menu,
+.technology .title-wrapper:hover .link {
+    color: #5768d1 !important;
+}
+
+.technology .label-topic:after,
+.technology .label-topic:before,
+.technology .title-topic:before,
+.technology .title-topic:after,
+.technology .title-topic-2:before,
+.technology .title-topic-2:after,
+.technology .pagination-wrapper .pagination li.active .pagi-link,
+.technology .subscribe-widget .form-wrapper button,
+.technology .navigation .main-menu:before,
+.technology .tabs-list-2 .link:before,
+.technology .tabs-list-2 .link:after,
+.technology .label-rating {
+    background-color: #5768d1 !important;
+}
+
+.technology .read-more:hover {
+    color: #5768d1;
+}
+
+.technology .read-more:hover i {
+    color: #5768d1;
+}
+
+.technology .read-more:hover:before,
+.technology .read-more:hover:after {
+    background-color: #5768d1 !important;
+}
+
+.video a:hover,
+.video a:hover .number,
+.video .label-wrapper .label-topic,
+.video .dropdown-menu li:hover > .link-page,
+.video .button-search .icons:hover,
+.video .catelogy-item .link,
+.video .post-number,
+.video .link-page:hover,
+.video .link-page:focus,
+.video .dropdown:hover .main-menu,
+.video .title-wrapper:hover .link {
+    color: #33d793 !important;
+}
+
+.video .label-topic:after,
+.video .label-topic:before,
+.video .title-topic:before,
+.video .title-topic:after,
+.video .title-topic-2:before,
+.video .title-topic-2:after,
+.video .pagination-wrapper .pagination li.active .pagi-link,
+.video .subscribe-widget .form-wrapper button,
+.video .navigation .main-menu:before,
+.video .tabs-list-2 .link:before,
+.video .tabs-list-2 .link:after,
+.video .label-rating {
+    background-color: #33d793 !important;
+}
+
+.video .read-more:hover {
+    color: #33d793;
+}
+
+.video .read-more:hover i {
+    color: #33d793;
+}
+
+.video .read-more:hover:before,
+.video .read-more:hover:after {
+    background-color: #33d793 !important;
+}
+
+.minimalist a:hover,
+.minimalist a:hover .number,
+.minimalist .label-wrapper .label-topic,
+.minimalist .dropdown-menu li:hover > .link-page,
+.minimalist .button-search .icons:hover,
+.minimalist .catelogy-item .link,
+.minimalist .post-number,
+.minimalist .link-page:hover,
+.minimalist .link-page:focus,
+.minimalist .dropdown:hover .main-menu,
+.minimalist .title-wrapper:hover .link {
+    color: #daad86 !important;
+}
+
+.minimalist .label-topic:after,
+.minimalist .label-topic:before,
+.minimalist .title-topic:before,
+.minimalist .title-topic:after,
+.minimalist .title-topic-2:before,
+.minimalist .title-topic-2:after,
+.minimalist .pagination-wrapper .pagination li.active .pagi-link,
+.minimalist .subscribe-widget .form-wrapper button,
+.minimalist .navigation .main-menu:before,
+.minimalist .tabs-list-2 .link:before,
+.minimalist .tabs-list-2 .link:after,
+.minimalist .label-rating {
+    background-color: #daad86 !important;
+}
+
+.minimalist .read-more:hover {
+    color: #daad86;
+}
+
+.minimalist .read-more:hover i {
+    color: #daad86;
+}
+
+.minimalist .read-more:hover:before,
+.minimalist .read-more:hover:after {
+    background-color: #daad86 !important;
+}
+
+.personal-blog a:hover,
+.personal-blog a:hover .number,
+.personal-blog .label-wrapper .label-topic,
+.personal-blog .dropdown-menu li:hover > .link-page,
+.personal-blog .button-search .icons:hover,
+.personal-blog .catelogy-item .link,
+.personal-blog .post-number,
+.personal-blog .link-page:hover,
+.personal-blog .link-page:focus,
+.personal-blog .dropdown:hover .main-menu,
+.personal-blog .title-wrapper:hover .link {
+    color: #daad86 !important;
+}
+
+.personal-blog .label-topic:after,
+.personal-blog .label-topic:before,
+.personal-blog .title-topic:before,
+.personal-blog .title-topic:after,
+.personal-blog .title-topic-2:before,
+.personal-blog .title-topic-2:after,
+.personal-blog .pagination-wrapper .pagination li.active .pagi-link,
+.personal-blog .subscribe-widget .form-wrapper button,
+.personal-blog .navigation .main-menu:before,
+.personal-blog .tabs-list-2 .link:before,
+.personal-blog .tabs-list-2 .link:after,
+.personal-blog .label-rating {
+    background-color: #daad86 !important;
+}
+
+.personal-blog .read-more:hover {
+    color: #daad86;
+}
+
+.personal-blog .read-more:hover i {
+    color: #daad86;
+}
+
+.personal-blog .read-more:hover:before,
+.personal-blog .read-more:hover:after {
+    background-color: #daad86 !important;
+}
+
+/*----------  0.2. Font  ----------*/
+
+/*=============================
+ ====  END VARIABLE LESS   ====
+ =============================*/
+
+/*=============================
+ =====       MIXINS       =====
+ =============================*/
+
+/*=============================
+ ====      END MIXINS      ====
+ =============================*/
+
+/*================================
+======     GLOBAL STYLE     ======
+=================================*/
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.limit-2-line {
+    position: relative;
+
+    overflow: hidden;
+
+    max-height: 48px;
+}
+
+.limit-3-line {
+    position: relative;
+
+    overflow: hidden;
+
+    max-height: 72px;
+}
+
+.limit-4-line {
+    position: relative;
+
+    overflow: hidden;
+
+    max-height: 96px;
+}
+
+.news-layout-4 {
+    height: 100%;
+}
+
+.news-layout-4 .news-image {
+    z-index: 1;
+
+    display: block;
+}
+
+.news-layout-4 .news-content {
+    padding: 50px 25px;
+
+    background-color: #ffffff;
+}
+
+.news-layout-4 .news-content .title {
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+
+    display: block;
+
+    text-transform: capitalize;
+
+    color: #333333;
+}
+
+.news-layout-4 .news-content .title:hover {
+    color: #d73333;
+}
+
+.news-layout-4 .news-content .info {
+    margin-top: 10px;
+}
+
+.news-layout-4 .news-content .description {
+    font-size: 14px;
+
+    margin: 20px 0 0 0;
+
+    color: #777777;
+}
+
+.news-layout-4.style-1 {
+    display: -ms-flexbox;
+    display:         flex;
+    display: -webkit-flex;
+    display:    -moz-flex;
+
+    background-color: #daad86;
+}
+
+.news-layout-4.style-1 .news-content {
+    padding: 25px 15px 30px;
+
+    background-color: #daad86;
+
+    -webkit-align-self: center;
+       -moz-align-self: center;
+            align-self: center;
+    -ms-flex-item-align: center;
+}
+
+.news-layout-4.style-1 .news-content .label-wrapper .label-topic {
+    color: #ffffff;
+}
+
+.news-layout-4.style-1 .news-content .title {
+    font-weight: 500;
+
+    color: #ffffff !important;
+}
+
+.news-layout-4.style-1 .news-content .title:hover {
+    text-decoration: underline;
+}
+
+.news-layout-4.style-1 .news-content .description {
+    font-size: 15px;
+
+    color: #ffffff;
+}
+
+.news-layout-4.style-1 .read-more {
+    color: #ffffff !important;
+}
+
+.news-layout-4.style-1 .read-more i {
+    color: #ffffff !important;
+}
+
+.news-layout-4.style-1 .read-more:before,
+.news-layout-4.style-1 .read-more:after {
+    background-color: #ffffff;
+}
+
+.news-layout-4.style-1 .read-more:hover:before,
+.news-layout-4.style-1 .read-more:hover:after {
+    background-color: #ffffff !important;
+}
+
+.news-layout-4.style-1 .precept blockquote {
+    margin-bottom: 0;
+    padding: 15px 0;
+
+    border-left: 0;
+}
+
+.news-layout-4.style-1 .precept i {
+    font-size: 40px;
+
+    color: #ffffff;
+}
+
+.news-layout-4.style-1 .precept p {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    line-height: 1.64;
+
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    color: #ffffff;
+}
+
+.news-layout-4.style-2 {
+    display: table;
+
+    width: 100%;
+    padding: 30px;
+
+    background-color: #ffffff;
+}
+
+.news-layout-4.style-2 .img-wrapper {
+    display: table-cell;
+
+    width: 25%;
+
+    vertical-align: top;
+}
+
+.news-layout-4.style-2 .news-content {
+    display: table-cell;
+
+    width: auto;
+    padding: 0 0 0 30px;
+
+    vertical-align: top;
+}
+
+.news-layout-4.style-2:hover .news-image:before {
+    opacity: 1;
+}
+
+.news-layout-4.style-2.bg-white .news-content {
+    background-color: #ffffff;
+}
+
+.news-layout-4:hover .news-image:before {
+    opacity: 1;
+}
+
+.news-layout-4.element-center {
+    text-align: center;
+}
+
+.news-layout-4.element-center .read-more:before {
+    left: calc(50% - 9px);
+
+    -webkit-transform: translate(-50%);
+       -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+         -o-transform: translate(-50%);
+            transform: translate(-50%);
+}
+
+.news-layout-4.element-center .read-more:after {
+    left: calc(50% + 22px - 9px);
+
+    -webkit-transform: translate(-50%);
+       -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+         -o-transform: translate(-50%);
+            transform: translate(-50%);
+}
+
+/*================================
+======   END GLOBAL STYLE   ======
+=================================*/
+
+/*================================
+======         PAGE         ======
+=================================*/
+
+.fashion-main-wrapper {
+    background-color: #fafafa;
+}
+
+.read-more {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+
+    position: relative;
+
+    display: inline-block;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 7px;
+
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #191919;
+}
+
+.read-more:before,
+.read-more:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 26px;
+    height: 2px;
+
+    content: '';
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+
+    background-color: #28292a;
+}
+
+.read-more:after {
+    left: 30px;
+
+    width: 8px;
+}
+
+.read-more.white {
+    color: #ffffff;
+}
+
+.read-more i {
+    position: relative;
+
+    padding-left: 12px;
+
+    color: #868686;
+}
+
+.read-more i:after {
+    position: absolute;
+
+    content: '\f105';
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+
+    opacity: 0;
+}
+
+.read-more:hover:before {
+    width: calc(100% - 18px);
+
+    background-color: #d73333;
+}
+
+.read-more:hover:after {
+    background-color: #d73333;
+}
+
+.read-more:hover i:after {
+    opacity: 1;
+}
+
+.banner-slide-homeminimalist {
+    position: relative;
+
+    display: -ms-flexbox;
+    display:         flex;
+    display: -webkit-flex;
+    display:    -moz-flex;
+    overflow: hidden;
+
+    margin: 0 auto;
+
+    -webkit-flex-wrap: wrap;
+       -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+
+.banner-slide-homeminimalist .slick-slider .slick-track,
+.banner-slide-homeminimalist .slick-slider .slick-list {
+    height: 100%;
+}
+
+.banner-slide-homeminimalist blockquote {
+    font-size: 18px;
+    font-style: italic;
+
+    position: relative;
+
+    margin: 20px 0 0 0;
+    padding: 10px 0;
+
+    border-left: 0;
+}
+
+.banner-slide-homeminimalist blockquote .icon-quote {
+    font-size: 40px;
+
+    position: absolute;
+    z-index: 1;
+    top: 0;
+
+    color: #e3e3e3;
+}
+
+.banner-slide-homeminimalist blockquote p {
+    position: relative;
+    z-index: 2;
+
+    overflow: hidden;
+
+    max-height: 96px;
+
+    color: #868686;
+}
+
+.banner-slide-homeminimalist .list-items-2 {
+    position: relative;
+
+    display: inline-block;
+
+    width: 30%;
+
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.banner-slide-homeminimalist .list-items-2:before {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+
+    background-color: rgba(15, 15, 15, .8);
+}
+
+.banner-slide-homeminimalist .list-items-2 .read-more {
+    display: none;
+}
+
+.banner-slide-homeminimalist .list-items-2 .more-text {
+    overflow: hidden;
+
+    max-height: 96px;
+}
+
+.banner-slide-homeminimalist .list-items-2 .news-layout-4 {
+    position: relative;
+}
+
+.banner-slide-homeminimalist .list-items-2 .news-layout-4 .news-image {
+    width: 100%;
+}
+
+.banner-slide-homeminimalist .list-items-2 .news-layout-4 .news-content {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+
+    display: block;
+    float: none;
+
+    width: 100%;
+    padding: 25px 15px 40px;
+
+    background-color: #f7f7f7;
+}
+
+.banner-slide-homeminimalist .list-items-2 .news-layout-4 .news-content .description {
+    font-size: 15px;
+}
+
+.banner-slide-homeminimalist .list-items-2 .news-layout-4 .news-content .title-2 {
+    padding-bottom: 10px;
+}
+
+.banner-slide-homeminimalist .list-items-2 .news-layout-4:hover .news-image:before {
+    opacity: 0;
+}
+
+.banner-slide-homeminimalist .list-items {
+    display: inline-block;
+
+    width: 70%;
+
+    vertical-align: top;
+}
+
+.banner-slide-homeminimalist .list-items .slick-arrow.waiting {
+    visibility: hidden;
+
+    -webkit-transition: none;
+       -moz-transition: none;
+         -o-transition: none;
+            transition: none;
+
+    opacity: 0;
+}
+
+.banner-slide-homeminimalist .list-items .more-text {
+    display: block;
+    overflow: hidden;
+
+    max-height: 184px;
+}
+
+.banner-slide-homeminimalist .list-items .news-layout-4:hover .news-image:before {
+    opacity: 0;
+}
+
+.banner-slide-homeminimalist .list-items .news-layout-4:before {
+    display: none;
+}
+
+.banner-slide-homeminimalist .list-items .news-layout-4 .news-image {
+    position: relative;
+
+    float: left;
+
+    width: 45%;
+}
+
+.banner-slide-homeminimalist .list-items .news-layout-4 .news-image:hover:before {
+    opacity: 1;
+}
+
+.banner-slide-homeminimalist .list-items .news-layout-4 .news-content {
+    position: static;
+
+    display: block;
+    float: left;
+
+    width: 55%;
+    padding: 25px 30px 10px 30px;
+
+    border-top: 5px solid #f1eeee;
+    background-color: #ffffff;
+}
+
+.banner-slide-homeminimalist .list-items .news-layout-4 .news-content .description.truncate {
+    height: auto;
+}
+
+.banner-slide-homeminimalist .list-items .limit-3-line {
+    max-height: none;
+}
+
+.banner-slide-homeminimalist .slick-prev,
+.banner-slide-homeminimalist .slick-next {
+    top: auto;
+    bottom: 0;
+
+    width: 40px;
+    height: 40px;
+
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+}
+
+.banner-slide-homeminimalist .slick-prev:before,
+.banner-slide-homeminimalist .slick-next:before {
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.banner-slide-homeminimalist .slick-prev:hover,
+.banner-slide-homeminimalist .slick-next:hover {
+    background-color: #ffffff;
+}
+
+.banner-slide-homeminimalist .slick-prev:hover:before,
+.banner-slide-homeminimalist .slick-next:hover:before {
+    color: #777777;
+}
+
+.banner-slide-homeminimalist .slick-prev {
+    bottom: 40px;
+}
+
+.banner-slide-homepersonalblog {
+    position: relative;
+
+    overflow: hidden;
+
+    margin: 0 auto;
+}
+
+.banner-slide-homepersonalblog blockquote {
+    font-size: 18px;
+    font-style: italic;
+
+    position: relative;
+
+    margin: 20px 0 0 0;
+    padding: 10px 0;
+
+    border-left: 0;
+}
+
+.banner-slide-homepersonalblog blockquote .icon-quote {
+    font-size: 40px;
+
+    position: absolute;
+    z-index: 1;
+    top: 0;
+
+    color: #e3e3e3;
+}
+
+.banner-slide-homepersonalblog blockquote p {
+    position: relative;
+    z-index: 2;
+
+    overflow: hidden;
+
+    max-height: 96px;
+
+    color: #868686;
+}
+
+.banner-slide-homepersonalblog .news-layout-2 .news-content {
+    padding: 0;
+}
+
+.banner-slide-homepersonalblog .news-layout-4 {
+    position: relative;
+}
+
+.banner-slide-homepersonalblog .news-layout-4 .news-content {
+    float: left;
+
+    width: 45%;
+    padding: 25px 30px 10px 30px;
+
+    border-top: 5px solid #f1eeee;
+    background-color: #ffffff;
+}
+
+.banner-slide-homepersonalblog .news-layout-4 .news-content .description {
+    font-size: 15px;
+}
+
+.banner-slide-homepersonalblog .news-layout-4 .news-content .title-2 {
+    padding-bottom: 10px;
+}
+
+.banner-slide-homepersonalblog .news-layout-4 .news-image {
+    position: relative;
+
+    float: left;
+
+    width: 55%;
+}
+
+.banner-slide-homepersonalblog .news-layout-4 .news-image:hover:before {
+    opacity: 1;
+}
+
+.banner-slide-homepersonalblog .news-layout-4:hover .news-image:before {
+    opacity: 0;
+}
+
+.banner-slide-homepersonalblog .more-text {
+    overflow: hidden;
+}
+
+.banner-slide-homepersonalblog .mask {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    opacity: 0;
+    background-color: rgba(15, 15, 15, .8);
+}
+
+.banner-slide-homepersonalblog .mask img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    max-width: 50px;
+
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.banner-slide-homepersonalblog .slick-prev,
+.banner-slide-homepersonalblog .slick-next {
+    top: auto;
+    bottom: 0;
+
+    width: 40px;
+    height: 40px;
+
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+}
+
+.banner-slide-homepersonalblog .slick-prev:before,
+.banner-slide-homepersonalblog .slick-next:before {
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.banner-slide-homepersonalblog .slick-prev {
+    bottom: 40px;
+}
+
+.banner-slide-homepersonalblog .slider-for {
+    height: 100%;
+}
+
+.banner-slide-homepersonalblog .slider-nav {
+    margin: 0 -15px;
+    padding: 20px;
+
+    background-color: #f8f8f8;
+}
+
+.banner-slide-homepersonalblog .slider-nav .item {
+    padding: 0 15px;
+
+    border-right: 1px solid #d3dbe4;
+}
+
+.block-minimalist-2 {
+    max-width: 750px;
+}
+
+.block-minimalist-2 .layout-main-news {
+    display: block;
+
+    width: 100%;
+}
+
+.block-minimalist-2 .layout-list-news {
+    font-size: 0;
+
+    display: block;
+
+    margin: 0 -15px;
+}
+
+.block-minimalist-2 .layout-list-news .block-item {
+    display: inline-block;
+
+    padding: 30px 15px 0 15px;
+
+    vertical-align: top;
+}
+
+.block-minimalist-2 .layout-list-news.column-1 .block-item {
+    width: 100%;
+}
+
+.block-minimalist-2 .layout-list-news.column-2 .block-item {
+    width: 50%;
+}
+
+.block-minimalist-2 .layout-list-news.column-3 .block-item {
+    width: 33.33333%;
+}
+
+.block-minimalist-2 .layout-list-news.column-4 .block-item {
+    width: 25%;
+}

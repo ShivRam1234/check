@@ -1,0 +1,989 @@
+{% extends 'base1.html' %}
+{% block title %}Index | Filmitouch {% endblock %}
+{% block metakeywords %}
+{% for article in articles %}
+<meta name="keywords" content="{{article.keywords}}"/>
+{% endfor %}
+{% for article1 in articles1 %}
+<meta name="keywords" content="{{article1.keywords}}"/>
+{% endfor %}
+{% for article2 in articles2 %}
+<meta name="keywords" content="{{article2.keywords}}"/>
+{% endfor %}
+{% for article3 in articles3 %}
+<meta name="keywords" content="{{article3.keywords}}"/>
+{% endfor %}
+{% for article4 in articles4 %}
+<meta name="keywords" content="{{article4.keywords}}"/>
+{% endfor %}
+{% for article5 in articles5 %}
+<meta name="keywords" content="{{article5.keywords}}"/>
+{% endfor %}
+{% for article6 in articles6 %}
+<meta name="keywords" content="{{article6.keywords}}"/>
+{% endfor %}
+{% for article7 in articles7 %}
+<meta name="keywords" content="{{article7.keywords}}"/>
+{% endfor %}
+{% for article8 in articles8 %}
+<meta name="keywords" content="{{article8.keywords}}"/>
+{% endfor %}
+{% for article9 in articles9 %}
+<meta name="keywords" content="{{article9.keywords}}"/>
+{% endfor %}
+{% for article10 in articles10 %}
+<meta name="keywords" content="{{article10.keywords}}"/>
+{% endfor %}
+{% for article11 in articles11 %}
+<meta name="keywords" content="{{article11.keywords}}"/>
+{% endfor %}
+{% for article12 in articles12 %}
+<meta name="keywords" content="{{article12.keywords}}"/>
+{% endfor %}
+{% for article13 in articles13 %}
+<meta name="keywords" content="{{article13.keywords}}"/>
+{% endfor %}
+{% for article14 in articles14 %}
+<meta name="keywords" content="{{article14.keywords}}"/>
+{% endfor %}
+{% for article15 in articles15 %}
+<meta name="keywords" content="{{article15.keywords}}"/>
+{% endfor %}
+{% for article16 in articles16 %}
+<meta name="keywords" content="{{article16.keywords}}"/>
+{% endfor %}
+{% for article17 in articles17 %}
+<meta name="keywords" content="{{article17.keywords}}"/>
+{% endfor %}
+{% for article18 in articles18 %}
+<meta name="keywords" content="{{article18.keywords}}"/>
+{% endfor %}
+{% for article19 in articles19 %}
+<meta name="keywords" content="{{article19.keywords}}"/>
+{% endfor %}
+{% for article20 in articles20 %}
+<meta name="keywords" content="{{article20.keywords}}"/>
+{% endfor %}
+{% for article21 in articles21 %}
+<meta name="keywords" content="{{article21.keywords}}"/>
+{% endfor %}
+{% for article22 in articles22 %}
+<meta name="keywords" content="{{article22.keywords}}"/>
+{% endfor %}
+{% for article23 in articles23 %}
+<meta name="keywords" content="{{article23.keywords}}"/>
+{% endfor %}
+{% for article24 in articles24 %}
+<meta name="keywords" content="{{article24.keywords}}"/>
+{% endfor %}
+    {% for article25 in articles25 %}
+<meta name="keywords" content="{{article25.keywords}}"/>
+{% endfor %}
+
+{% endblock %}
+{% block metashortdescription %}
+ {% for article in articles %}
+<meta name="description" content="{{article.sort_desc}}"/>
+{% endfor %}
+{% for article1 in articles1 %}
+<meta name="description" content="{{article1.sort_desc}}"/>
+{% endfor %}
+{% for article2 in articles2 %}
+<meta name="description" content="{{article2.sort_desc}}"/>
+{% endfor %}
+{% for article3 in articles3 %}
+<meta name="description" content="{{article3.sort_desc}}"/>
+{% endfor %}
+{% for article4 in articles4 %}
+<meta name="description" content="{{article4.sort_desc}}"/>
+{% endfor %}
+{% for article5 in articles5 %}
+<meta name="description" content="{{article5.sort_desc}}"/>
+{% endfor %}
+{% for article6 in articles6 %}
+<meta name="description" content="{{article6.sort_desc}}"/>
+{% endfor %}
+{% for article7 in articles7 %}
+<meta name="description" content="{{article7.sort_desc}}"/>
+{% endfor %}
+{% for article8 in articles8 %}
+<meta name="description" content="{{article8.sort_desc}}"/>
+{% endfor %}
+{% for article9 in articles9 %}
+<meta name="description" content="{{article9.sort_desc}}"/>
+{% endfor %}
+{% for article10 in articles10 %}
+<meta name="description" content="{{article10.sort_desc}}"/>
+{% endfor %}
+{% for article11 in articles11 %}
+<meta name="description" content="{{article11.sort_desc}}"/>
+{% endfor %}
+{% for article12 in articles12 %}
+<meta name="description" content="{{article12.sort_desc}}"/>
+{% endfor %}
+{% for article13 in articles13 %}
+<meta name="description" content="{{article13.sort_desc}}"/>
+{% endfor %}
+{% for article14 in articles14 %}
+<meta name="description" content="{{article14.sort_desc}}"/>
+{% endfor %}
+{% for article15 in articles15 %}
+<meta name="description" content="{{article15.sort_desc}}"/>
+{% endfor %}
+{% for article16 in articles16 %}
+<meta name="description" content="{{article16.sort_desc}}"/>
+{% endfor %}
+{% for article17 in articles17 %}
+<meta name="description" content="{{article17.sort_desc}}"/>
+{% endfor %}
+{% for article18 in articles18 %}
+<meta name="description" content="{{article18.sort_desc}}"/>
+{% endfor %}
+{% for article19 in articles19 %}
+<meta name="description" content="{{article19.sort_desc}}"/>
+{% endfor %}
+{% for article20 in articles20 %}
+<meta name="description" content="{{article20.sort_desc}}"/>
+{% endfor %}
+{% for article21 in articles21 %}
+<meta name="description" content="{{article21.sort_desc}}"/>
+{% endfor %}
+{% for article22 in articles22 %}
+<meta name="description" content="{{article22.sort_desc}}"/>
+{% endfor %}
+{% for article23 in articles23 %}
+<meta name="description" content="{{article23.sort_desc}}"/>
+{% endfor %}
+{% for article24 in articles24 %}
+<meta name="description" content="{{article24.sort_desc}}"/>
+{% endfor %}
+{% for article25 in articles25 %}
+<meta name="description" content="{{article25.sort_desc}}"/>
+{% endfor %}
+
+{% endblock %}
+{% block main-content %}
+<div class="hot-news">
+                        <div class="container">
+                              <div class="hot-news-heading">
+                                <div class="left-info"><i class="icons flaticon-nature"></i>
+                                    <h4 class="title">Trending Blogs</h4></div>
+                                <div class="right-info">
+                                    <div class="hot-news-prev"><i class="fa fa-angle-left"></i></div>
+                                    <div class="hot-news-next"><i class="fa fa-angle-right"></i></div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="hot-news-content overflow-hidden">
+                                <div class="slick-4-item">
+							{% for article in articles %}
+<div class="item">
+    <div class="news-layout-1">
+        <a href="#" class="news-image"><img src="{{ article.image.url }}" alt=""  class="img-responsive"></a>
+        <div class="news-content">
+            <div class="label-wrapper"><a href="#" class="label-topic">{{ article.categories }}</a></div>
+            <a href="{{ article.get_absolute_url }}" class="title">{{ article.title }}</a>
+                                                        <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                        </ul>
+                                                        </div>
+                                                </div>
+</div>
+{% endfor %}
+
+
+                                </div>
+                            </div>
+                    </div>
+					</div>
+                <!-- start healthfitness-->
+                <div class="main-news-wrapper technology padding-top-40 padding-bottom-40">
+                        <!-- start column health fitness-->
+						<div class="container">
+                            <!-- BLOCK LIST 4 COLUMN-->
+                            <div class="block-list column-4 margin-bottom-80">
+                                <div class="block-heading">
+                                    <div class="heading-left">
+                                        <div class="title-topic">Health-Fitness</div>
+                                    </div>
+                                    <div class="heading-right">
+                                        <ul role="tablist" class="tabs-list">
+                                            <li role="presentation" class="active"><a href="#tab-1"  aria-controls="tab-1" role="tab" data-toggle="tab" class="link">Fitness Tips</a></li>
+                                            <li role="presentation"><a href="#tab-2" aria-controls="tab-2" role="tab" data-toggle="tab" class="link">Workouts</a></li>
+                                            <li role="presentation"><a href="#tab-3" aria-controls="tab-3" role="tab" data-toggle="tab" class="link">Nutrition</a></li>
+											<li role="presentation"><a href="#tab-4" aria-controls="tab-4" role="tab" data-toggle="tab" class="link">Remedies</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="tab-content">
+                                    <div id="tab-1" role="tabpanel" class="tab-pane fade in active">
+                                        <div class="block-news-content">
+{% for article1 in articles1 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article1.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article1.sub_cat }}</a></div>
+                                                <a href="{{ article1.get_absolute_url }}" class="title">{{ article1.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div id="tab-2" role="tabpanel" class="tab-pane fade">
+                                        <div class="block-news-content">
+						{% for article2 in articles2 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article2.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article2.sub_cat }}</a></div>
+                                                <a href="{{ article2.get_absolute_url }}" class="title">{{ article2.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div id="tab-3" role="tabpanel" class="tab-pane fade">
+                                        <div class="block-news-content">
+{% for article3 in articles3 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article3.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article3.sub_cat }}</a></div>
+                                                <a href="{{ article3.get_absolute_url }}" class="title">{{ article3.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div id="tab-4" role="tabpanel" class="tab-pane fade">
+                                        <div class="block-news-content">
+                        {% for article4 in articles4 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article4.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article4.sub_cat }}</a></div>
+                                                <a href="{{ article4.get_absolute_url }}" class="title">{{ article4.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                            </div>
+							<!--End of health-fitness-->
+                   <div class="main-news-wrapper technology padding-top-80 padding-bottom-80">
+							<!--Start of Sports-->
+							<div class="container">
+                            <!-- BLOCK LIST 4 COLUMN-->
+                            <div class="block-list column-4 margin-bottom-80">
+                                <div class="block-heading">
+                                    <div class="heading-left">
+                                        <div class="title-topic">Sports</div>
+                                    </div>
+                                    <div class="heading-right">
+                                        <ul role="tablist" class="tabs-list">
+                                            <li role="presentation" class="active"><a href="#tab-5"  aria-controls="tab-1" role="tab" data-toggle="tab" class="link">Football</a></li>
+
+                                            <li role="presentation"><a href="#tab-6" aria-controls="tab-6" role="tab" data-toggle="tab" class="link">Cricket</a></li>
+                                            <li role="presentation"><a href="#tab-7" aria-controls="tab-7" role="tab" data-toggle="tab" class="link">IPL</a></li>
+											<li role="presentation"><a href="#tab-8" aria-controls="tab-8" role="tab" data-toggle="tab" class="link">Olympics</a></li>
+                                            <li role="presentation"><a href="#tab-9" aria-controls="tab-9" role="tab" data-toggle="tab" class="link">Other</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="tab-content">
+                                    <div id="tab-5" role="tabpanel" class="tab-pane fade in active">
+                                        <div class="block-news-content">
+						{% for article5 in articles5 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article5.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article5.sub_cat }}</a></div>
+                                                <a href="{{ article5.get_absolute_url }}" class="title">{{ article5.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}                </div>
+                                    </div>
+                                    <div id="tab-6" role="tabpanel" class="tab-pane fade">
+                                        <div class="block-news-content">
+{% for article6 in articles6 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article6.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article6.sub_cat }}</a></div>
+                                                <a href="{{ article6.get_absolute_url }}" class="title">{{ article6.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div id="tab-7" role="tabpanel" class="tab-pane fade">
+                                        <div class="block-news-content">
+{% for article7 in articles7 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article7.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article7.sub_cat }}</a></div>
+                                                <a href="{{ article7.get_absolute_url }}" class="title">{{ article7.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div id="tab-8" role="tabpanel" class="tab-pane fade">
+                                        <div class="block-news-content">
+{% for article8 in articles8 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article8.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article8.sub_cat }}</a></div>
+                                                <a href="{{ article8.get_absolute_url }}" class="title">{{ article8.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+                                <div id="tab-9" role="tabpanel" class="tab-pane fade">
+                                        <div class="block-news-content">
+{% for article9 in articles9 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article9.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article9.sub_cat }}</a></div>
+                                                <a href="{{ article9.get_absolute_url }}" class="title">{{ article9.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                            </div>
+							<!---end of Sports-->
+                   </div>
+                   <div class="main-news-wrapper technology padding-top-80 padding-bottom-80">
+							<div class="container">
+                            <!-- BLOCK LIST 4 COLUMN-->
+                            <div class="block-list column-4 margin-bottom-80">
+                                <div class="block-heading">
+                                    <div class="heading-left">
+                                        <div class="title-topic">Technology</div>
+                                    </div>
+                                    <div class="heading-right">
+                                        <ul role="tablist" class="tabs-list">
+                                            <li role="presentation" class="active"><a href="#tab-10"  aria-controls="tab-10" role="tab" data-toggle="tab" class="link">Computer</a></li>
+
+                                            <li role="presentation"><a href="#tab-11" aria-controls="tab-11" role="tab" data-toggle="tab" class="link">Smart Phone</a></li>
+                                            <li role="presentation"><a href="#tab-12" aria-controls="tab-12" role="tab" data-toggle="tab" class="link">Laptop</a></li>
+											<li role="presentation"><a href="#tab-13" aria-controls="tab-13" role="tab" data-toggle="tab" class="link">Camera</a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="tab-content">
+                                    <div id="tab-10" role="tabpanel" class="tab-pane fade in active">
+                                        <div class="block-news-content">
+{% for article10 in articles10 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article10.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article10.sub_cat }}</a></div>
+                                                <a href="{{ article10.get_absolute_url }}" class="title">{{ article10.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}                                        </div>
+                                    </div>
+                                    <div id="tab-11" role="tabpanel" class="tab-pane fade">
+                                        <div class="block-news-content">
+{% for article11 in articles11 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article11.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article11.sub_cat }}</a></div>
+                                                <a href="{{ article11.get_absolute_url }}" class="title">{{ article11.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div id="tab-12" role="tabpanel" class="tab-pane fade">
+                                        <div class="block-news-content">
+                        {% for article12 in articles12 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article12.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article12.sub_cat }}</a></div>
+                                                <a href="{{ article12.get_absolute_url }}" class="title">{{ article12.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div id="tab-13" role="tabpanel" class="tab-pane fade">
+                                        <div class="block-news-content">
+{% for article13 in articles13 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article13.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article13.sub_cat }}</a></div>
+                                                <a href="{{ article13.get_absolute_url }}" class="title">{{ article13.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            </div>
+							<!--End of Technology-->
+                   </div>
+                   <div class="main-news-wrapper technology padding-top-80 padding-bottom-80">
+							<div class="container">
+                            <!-- BLOCK LIST 4 COLUMN-->
+                            <div class="block-list column-4 margin-bottom-80">
+                                <div class="block-heading">
+                                    <div class="heading-left">
+                                        <div class="title-topic">Bollywood</div>
+                                    </div>
+                                    <div class="heading-right">
+                                        <ul role="tablist" class="tabs-list">
+                                            <li role="presentation" class="active"><a href="#tab-14"  aria-controls="tab-14" role="tab" data-toggle="tab" class="link">Action</a></li>
+
+                                            <li role="presentation"><a href="#tab-15" aria-controls="tab-15" role="tab" data-toggle="tab" class="link">Comedy</a></li>
+                                            <li role="presentation"><a href="#tab-16" aria-controls="tab-16" role="tab" data-toggle="tab" class="link">Drama</a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="tab-content">
+                                    <div id="tab-14" role="tabpanel" class="tab-pane fade in active">
+                                        <div class="block-news-content">
+{% for article14 in articles14 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article14.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article14.sub_cat }}</a></div>
+                                                <a href="{{ article14.get_absolute_url }}" class="title">{{ article14.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div id="tab-15" role="tabpanel" class="tab-pane fade">
+                                        <div class="block-news-content">
+								{% for article15 in articles15 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article15.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article15.sub_cat }}</a></div>
+                                                <a href="{{ article15.get_absolute_url }}" class="title">{{ article15.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+
+								                                                                </div>
+                                    </div>
+                                    <div id="tab-16" role="tabpanel" class="tab-pane fade">
+                                        <div class="block-news-content">
+                                        {% for article16 in articles16 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article16.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article16.sub_cat }}</a></div>
+                                                <a href="{{ article16.get_absolute_url }}" class="title">{{ article16.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            </div>
+							<!--End of Bollywood-->
+                   </div>
+                   <div class="main-news-wrapper technology padding-top-80 padding-bottom-80">
+							<div class="container">
+                            <!-- BLOCK LIST 4 COLUMN-->
+                            <div class="block-list column-4 margin-bottom-80">
+                                <div class="block-heading">
+                                    <div class="heading-left">
+                                        <div class="title-topic">Hollywood</div>
+                                    </div>
+                                    <div class="heading-right">
+                                        <ul role="tablist" class="tabs-list">
+                                            <li role="presentation" class="active"><a href="#tab-17"  aria-controls="tab" role="tab" data-toggle="tab" class="link">Action</a></li>
+                                            <li role="presentation"><a href="#tab-18" aria-controls="tab-18" role="tab" data-toggle="tab" class="link">Comedy</a></li>
+                                            <li role="presentation"><a href="#tab-19" aria-controls="tab-19" role="tab" data-toggle="tab" class="link">Sci-Fi</a></li>
+											<li role="presentation"><a href="#tab-20" aria-controls="tab-20" role="tab" data-toggle="tab" class="link">Animation</a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="tab-content">
+                                    <div id="tab-17" role="tabpanel" class="tab-pane fade in active">
+                                        <div class="block-news-content">
+										   {% for article17 in articles17 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article17.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article17.sub_cat }}</a></div>
+                                                <a href="{{ article17.get_absolute_url }}" class="title">{{ article17.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div id="tab-18" role="tabpanel" class="tab-pane fade">
+                                        <div class="block-news-content">
+								{% for article18 in articles18 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article18.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article18.sub_cat }}</a></div>
+                                                <a href="{{ article18.get_absolute_url }}" class="title">{{ article18.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div id="tab-19" role="tabpanel" class="tab-pane fade">
+                                        <div class="block-news-content">
+{% for article19 in articles19 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article19.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article19.sub_cat }}</a></div>
+                                                <a href="{{ article19.get_absolute_url }}" class="title">{{ article19.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div id="tab-20" role="tabpanel" class="tab-pane fade">
+                                        <div class="block-news-content">
+{% for article20 in articles20 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article20.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article20.sub_cat }}</a></div>
+                                                <a href="{{ article20.get_absolute_url }}" class="title">{{ article20.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            </div>
+							<!--End of Hollywood-->
+                   </div>
+                   <div class="main-news-wrapper technology padding-top-80 padding-bottom-80">
+							<div class="container">
+                            <!-- BLOCK LIST 4 COLUMN-->
+                            <div class="block-list column-4 margin-bottom-80">
+                                <div class="block-heading">
+                                    <div class="heading-left">
+                                        <div class="title-topic">Travel</div>
+                                    </div>
+                                    <div class="heading-right">
+                                        <ul role="tablist" class="tabs-list">
+                                            <li role="presentation" class="active"><a href="#tab-21"  aria-controls="tab-21" role="tab" data-toggle="tab" class="link">Destination</a></li>
+
+                                            </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="tab-content">
+                                    <div id="tab-21" role="tabpanel" class="tab-pane fade in active">
+                                        <div class="block-news-content">
+{% for article21 in articles21 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article21.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article21.sub_cat }}</a></div>
+                                                <a href="{{ article21.get_absolute_url }}" class="title">{{ article21.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            </div>
+							<!--End of Travel-->
+                   </div>
+                   <div class="main-news-wrapper technology padding-top-80 padding-bottom-80">
+							<div class="container">
+                            <!-- BLOCK LIST 4 COLUMN-->
+                            <div class="block-list column-4 margin-bottom-80">
+                                <div class="block-heading">
+                                    <div class="heading-left">
+                                        <div class="title-topic">Fashion</div>
+                                    </div>
+                                    <div class="heading-right">
+                                        <ul role="tablist" class="tabs-list">
+                                            <li role="presentation" class="active"><a href="#tab-22"  aria-controls="tab-22" role="tab" data-toggle="tab" class="link">Collection</a></li>
+
+                                            <li role="presentation"><a href="#tab-23" aria-controls="tab-23" role="tab" data-toggle="tab" class="link">Stars</a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="tab-content">
+                                    <div id="tab-22" role="tabpanel" class="tab-pane fade in active">
+                                        <div class="block-news-content">
+{% for article22 in articles22 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article22.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article22.sub_cat }}</a></div>
+                                                <a href="{{ article22.get_absolute_url }}" class="title">{{ article22.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+
+                                        </div>
+                                    </div>
+                                    <div id="tab-23" role="tabpanel" class="tab-pane fade">
+                                        <div class="block-news-content">
+{% for article23 in articles23 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article23.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article23.sub_cat }}</a></div>
+                                                <a href="{{ article23.get_absolute_url }}" class="title">{{ article23.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            </div>
+							<!--End of Fashion-->
+                   </div>
+                   <div class="main-news-wrapper technology padding-top-80 padding-bottom-80">
+							<div class="container">
+                            <!-- BLOCK LIST 4 COLUMN-->
+                            <div class="block-list column-4 margin-bottom-80">
+                                <div class="block-heading">
+                                    <div class="heading-left">
+                                        <div class="title-topic">Cars</div>
+                                    </div>
+                                    <div class="heading-right">
+                                        <ul role="tablist" class="tabs-list">
+                                            <li role="presentation" class="active"><a href="#tab-24"  aria-controls="tab-24" role="tab" data-toggle="tab" class="link">Cars</a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="tab-content">
+                                    <div id="tab-24" role="tabpanel" class="tab-pane fade in active">
+                                        <div class="block-news-content">
+	{% for article24 in articles24 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article24.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article24.sub_cat }}</a></div>
+                                                <a href="{{ article24.get_absolute_url }}" class="title">{{ article24.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            </div>
+							<!--End of cars-->
+                                      <div class="main-news-wrapper technology padding-top-80 padding-bottom-80">
+							<div class="container">
+                            <!-- BLOCK LIST 4 COLUMN-->
+                            <div class="block-list column-4 margin-bottom-80">
+                                <div class="block-heading">
+                                    <div class="heading-left">
+                                        <div class="title-topic">Nature</div>
+                                    </div>
+                                    <div class="heading-right">
+                                        <ul role="tablist" class="tabs-list">
+                                            <li role="presentation" class="active"><a href="#tab-25"  aria-controls="tab-25" role="tab" data-toggle="tab" class="link">Nature Beauty</a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="tab-content">
+                                    <div id="tab-25" role="tabpanel" class="tab-pane fade in active">
+                                        <div class="block-news-content">
+{% for article25 in articles25 %}
+
+             <div class="block-item">
+
+                                        <div class="news-layout-1">
+                                            <a href="#" class="news-image"><img src="{{ article25.image.url }}" alt="" class="img-responsive"></a>
+                                            <div class="news-content">
+                                                <div class="label-wrapper"><a href="" class="label-topic">{{ article25.sub_cat }}</a></div>
+                                                <a href="{{ article25.get_absolute_url }}" class="title">{{ article25.title }}</a>
+                                                <ul class="info">
+                                                    <li><a href="#" class="link">By Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+             </div>
+
+            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            </div>
+							<!--End of cars-->
+                   </div>
+                </div>
+</div>
+{% endblock %}

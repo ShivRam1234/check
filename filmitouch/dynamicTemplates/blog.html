@@ -1,0 +1,812 @@
+{% extends 'base1.html' %}
+{% block title %}{{ task.title }} | Filmitouch{% endblock %}
+{% block metakeywords %}
+     <meta name="keywords" content="{{ task.keywords }}" />
+{% for article1 in articles1 %}
+<meta name="keywords" content="{{article1.keywords}}"/>
+{% endfor %}
+{% for article2 in articles2 %}
+<meta name="keywords" content="{{article2.keywords}}"/>
+{% endfor %}
+{% for article3 in articles3 %}
+<meta name="keywords" content="{{article3.keywords}}"/>
+{% endfor %}
+{% for article4 in articles4 %}
+<meta name="keywords" content="{{article4.keywords}}"/>
+{% endfor %}
+{% for article5 in articles5 %}
+<meta name="keywords" content="{{article5.keywords}}"/>
+{% endfor %}
+{% for article6 in articles6 %}
+<meta name="keywords" content="{{article6.keywords}}"/>
+{% endfor %}
+{% for article7 in articles7 %}
+<meta name="keywords" content="{{article7.keywords}}"/>
+{% endfor %}
+{% for article8 in articles8 %}
+<meta name="keywords" content="{{article8.keywords}}"/>
+{% endfor %}
+{% for article9 in articles9 %}
+<meta name="keywords" content="{{article9.keywords}}"/>
+{% endfor %}
+{% for article10 in articles10 %}
+<meta name="keywords" content="{{article10.keywords}}"/>
+{% endfor %}
+{% for article11 in articles11 %}
+<meta name="keywords" content="{{article11.keywords}}"/>
+{% endfor %}
+{% for article12 in articles12 %}
+<meta name="keywords" content="{{article12.keywords}}"/>
+{% endfor %}
+{% for article13 in articles13 %}
+<meta name="keywords" content="{{article13.keywords}}"/>
+{% endfor %}
+{% for article14 in articles14 %}
+<meta name="keywords" content="{{article14.keywords}}"/>
+{% endfor %}
+{% for article15 in articles15 %}
+<meta name="keywords" content="{{article15.keywords}}"/>
+{% endfor %}
+{% for article16 in articles16 %}
+<meta name="keywords" content="{{article16.keywords}}"/>
+{% endfor %}
+{% for article17 in articles17 %}
+<meta name="keywords" content="{{article17.keywords}}"/>
+{% endfor %}
+{% for article18 in articles18 %}
+<meta name="keywords" content="{{article18.keywords}}"/>
+{% endfor %}
+{% for article19 in articles19 %}
+<meta name="keywords" content="{{article19.keywords}}"/>
+{% endfor %}
+{% for article20 in articles20 %}
+<meta name="keywords" content="{{article20.keywords}}"/>
+{% endfor %}
+{% for article21 in articles21 %}
+<meta name="keywords" content="{{article21.keywords}}"/>
+{% endfor %}
+{% for article22 in articles22 %}
+<meta name="keywords" content="{{article22.keywords}}"/>
+{% endfor %}
+{% for article23 in articles23 %}
+<meta name="keywords" content="{{article23.keywords}}"/>
+{% endfor %}
+{% for article24 in articles24 %}
+<meta name="keywords" content="{{article24.keywords}}"/>
+{% endfor %}
+    {% for article25 in articles25 %}
+<meta name="keywords" content="{{article25.keywords}}"/>
+{% endfor %}
+{% endblock %}
+{% block metashortdescription %}
+    <meta name="description" content="{{ task.sort_desc }}"/>
+       {% for article1 in articles1 %}
+<meta name="description" content="{{article1.sort_desc}}"/>
+{% endfor %}
+{% for article2 in articles2 %}
+<meta name="description" content="{{article2.sort_desc}}"/>
+{% endfor %}
+{% for article3 in articles3 %}
+<meta name="description" content="{{article3.sort_desc}}"/>
+{% endfor %}
+{% for article4 in articles4 %}
+<meta name="description" content="{{article4.sort_desc}}"/>
+{% endfor %}
+{% for article5 in articles5 %}
+<meta name="description" content="{{article5.sort_desc}}"/>
+{% endfor %}
+{% for article6 in articles6 %}
+<meta name="description" content="{{article6.sort_desc}}"/>
+{% endfor %}
+{% for article7 in articles7 %}
+<meta name="description" content="{{article7.sort_desc}}"/>
+{% endfor %}
+{% for article8 in articles8 %}
+<meta name="description" content="{{article8.sort_desc}}"/>
+{% endfor %}
+{% for article9 in articles9 %}
+<meta name="description" content="{{article9.sort_desc}}"/>
+{% endfor %}
+{% for article10 in articles10 %}
+<meta name="description" content="{{article10.sort_desc}}"/>
+{% endfor %}
+{% for article11 in articles11 %}
+<meta name="description" content="{{article11.sort_desc}}"/>
+{% endfor %}
+{% for article12 in articles12 %}
+<meta name="description" content="{{article12.sort_desc}}"/>
+{% endfor %}
+{% for article13 in articles13 %}
+<meta name="description" content="{{article13.sort_desc}}"/>
+{% endfor %}
+{% for article14 in articles14 %}
+<meta name="description" content="{{article14.sort_desc}}"/>
+{% endfor %}
+{% for article15 in articles15 %}
+<meta name="description" content="{{article15.sort_desc}}"/>
+{% endfor %}
+{% for article16 in articles16 %}
+<meta name="description" content="{{article16.sort_desc}}"/>
+{% endfor %}
+{% for article17 in articles17 %}
+<meta name="description" content="{{article17.sort_desc}}"/>
+{% endfor %}
+{% for article18 in articles18 %}
+<meta name="description" content="{{article18.sort_desc}}"/>
+{% endfor %}
+{% for article19 in articles19 %}
+<meta name="description" content="{{article19.sort_desc}}"/>
+{% endfor %}
+{% for article20 in articles20 %}
+<meta name="description" content="{{article20.sort_desc}}"/>
+{% endfor %}
+{% for article21 in articles21 %}
+<meta name="description" content="{{article21.sort_desc}}"/>
+{% endfor %}
+{% for article22 in articles22 %}
+<meta name="description" content="{{article22.sort_desc}}"/>
+{% endfor %}
+{% for article23 in articles23 %}
+<meta name="description" content="{{article23.sort_desc}}"/>
+{% endfor %}
+{% for article24 in articles24 %}
+<meta name="description" content="{{article24.sort_desc}}"/>
+{% endfor %}
+{% for article25 in articles25 %}
+<meta name="description" content="{{article25.sort_desc}}"/>
+{% endfor %}
+
+{% endblock %}
+{% block main-content %}
+    <div class="breadcrumb-container">
+                        <div class="container">
+                            <div class="breadcrumb-wrapper">
+                                  <ol class="breadcrumb">
+
+       <li class="breadcrumb-item"><a href="{% url 'home' %}" class="breadcrumb-link">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="{{ task.categories }}" class="breadcrumb-link">{{ task.categories }}</a></li>
+                                    <li class="breadcrumb-item"><span class="breadcrumb-active">{{ task.title }}</span></li>
+
+								</ol>
+                            <div class="breadcrumb-text">{{ task.title }}</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-post padding-top-40 padding-bottom-40">
+                        <div class="container">
+                            <div class="title-wrapper">
+                                <div class="row">
+
+                                    <div class="col-md-3">
+                                        <div class="title-topic title-single-post">{{ task.sub_cat }}</div>
+
+                                    </div>
+                                    <div class="col-md-9">
+
+                                        <div class="social-action-wrapper">
+                                                           <div class="action-text">follow <span class="identity">ExamsInfo</span></div>
+                                            <ul class="social-button-wrapper list-unstyled list-inline">
+                                                <li class="item">
+                                                    <div data-layout="button_count" data-href="#" data-action="like" data-size="small" data-show-faces="false" data-share="false" class="fb-like fb-like-button"></div>
+                                                </li>
+                                                <li class="item"><a href="https://twitter.com/twitter" data-show-count="true" data-show-screen-name="false" class="twitter-follow-button">Follow @twitter</a></li>
+                                                <li class="item">
+                                                    <div data-size="medium" data-align="left" data-count="true" data-annotation="bubble" style="margin-top:4px" class="g-plusone gplus-follow-button"> </div>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 col-xs-12 main-news main-left">
+<h1 class="title-post">{{ task.title }}</h1>
+                                 <!-- SHARE BUTTONS-->
+                                    <div class="sharing-wrapper">
+                                        <div class="item">
+                                            <div class="figure-wrapper">
+<div class="figure-data">245</div>
+                                                <div class="figure-text">shares</div>
+
+                                            </div>
+                                        </div>
+    <div class="item"><a href="#" class="button share-facebook"><i class="fa fa-facebook ic-social hovered"></i><i class="fa fa-facebook ic-social unhovered"></i><div class="share-text">Share</div></a></div>
+    <div class="item"><a href="#" class="button share-twitter"><i class="fa fa-twitter ic-social hovered"></i><i class="fa fa-twitter ic-social unhovered"></i><div class="share-text">Share</div></a></div>
+    <div class="item other-share-wrapper"><a class="button other-share share-gplus"><i class="fa fa-google-plus"></i></a><a class="button other-share share-pinterest"><i class="fa fa-pinterest"></i></a><a class="button other-share share-linkedin"><i class="fa fa-linkedin"></i></a></div>
+    <div class="item"><a class="button button-more"><i class="fa fa-ellipsis-h ic-more"></i><div class="share-text more">more</div><i class="fa fa-caret-left ic-less hide"></i><div class="share-text less hide">less</div></a></div>
+                                </div>
+                                <!-- MAIN CONTENT OF POST-->
+                                <div class="main-content">
+<img src="{{ task.image.url }}" alt="" class="img-responsive content-image">
+
+                             <div class="content-wrapper">
+                                        <div class="row">
+                                                {{ task.description|safe }}
+                                            </div>
+                                        </div>
+                                </div>
+                                <!-- RELATED POST-->
+                                <div class="related-post-wrapper block-list column-4 padding-top-80">
+                                    <div class="title-topic">related post</div>
+                                    <div class="block-news-content">
+ <!---Bank Exam -->
+{% for article1 in articles1 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article1.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article1.get_absolute_url }}" class="title">{{ article1.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article1.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article1.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                <!---Defence Exam -->
+    {% for article2 in articles2 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article2.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article2.get_absolute_url }}" class="title">{{ article2.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article2.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article2.categories }}</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+
+    <!---Railway Exam-->
+    {% for article3 in articles3 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article3.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article3.get_absolute_url }}" class="title">{{ article3.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article3.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article3.categories }}</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                <!---Engineering Exam-->
+    {% for article4 in articles4 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article4.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article4.get_absolute_url }}" class="title">{{ article4.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article4.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article4.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                <!---Law Exam-->
+    {% for article5 in articles5 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article5.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article5.get_absolute_url }}" class="title">{{ article5.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article5.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article5.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+        <!---Medical Exam-->
+    {% for article6 in articles6 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article6.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article6.get_absolute_url }}" class="title">{{ article6.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article6.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article6.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+    <!---Designing Exam-->
+    {% for article7 in articles7 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article7.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article7.get_absolute_url }}" class="title">{{ article7.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article7.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article7.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                <!---Hotel Management-->
+      {% for article8 in articles8 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article8.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article8.get_absolute_url }}" class="title">{{ article8.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article8.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article8.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article9 in articles9 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article9.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article9.get_absolute_url }}" class="title">{{ article9.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article9.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article9.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article10 in articles10 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article10.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article10.get_absolute_url }}" class="title">{{ article10.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article10.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article10.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article11 in articles11 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article11.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article11.get_absolute_url }}" class="title">{{ article11.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article8.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article8.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article12 in articles12 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article12.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article12.get_absolute_url }}" class="title">{{ article12.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article12.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article12.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article13 in articles13 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article13.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article13.get_absolute_url }}" class="title">{{ article13.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article13.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article13.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article14 in articles14 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article14.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article14.get_absolute_url }}" class="title">{{ article14.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article14.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article14.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article15 in articles15 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article15.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article15.get_absolute_url }}" class="title">{{ article15.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article15.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article15.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article16 in articles16 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article16.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article16.get_absolute_url }}" class="title">{{ article16.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article16.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article16.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article17 in articles17 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article17.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article17.get_absolute_url }}" class="title">{{ article17.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article17.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article17.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article18 in articles18 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article18.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article18.get_absolute_url }}" class="title">{{ article18.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article18.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article18.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article19 in articles19 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article19.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article19.get_absolute_url }}" class="title">{{ article19.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article19.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article19.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article20 in articles20 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article20.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article20.get_absolute_url }}" class="title">{{ article20.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article20.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article20.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article21 in articles21 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article21.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article21.get_absolute_url }}" class="title">{{ article21.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article21.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article21.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article22 in articles22 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article22.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article22.get_absolute_url }}" class="title">{{ article22.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article22.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article22.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article23 in articles23 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article23.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article23.get_absolute_url }}" class="title">{{ article23.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article23.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article23.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article24 in articles24 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article24.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article24.get_absolute_url }}" class="title">{{ article24.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article24.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article24.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                          {% for article25 in articles25 %}
+<div class="block-item">
+                                            <div class="news-layout-1 small">
+                                                <a href="#" class="news-image"><img src="{{ article25.image.url }}" alt="" class="img-responsive"></a>
+                                                <div class="news-content"><a href="{{ article25.get_absolute_url }}" class="title">{{ article25.title }}</a>
+                                                    <ul class="info">
+                                                        <li><a href="#" class="link">{{ article25.datetime }}</a></li>
+                                                        <li><a href="" class="label-topic"><span>{{ article25.categories }}</span></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+{% endfor %}
+                                      </div>
+                                </div>
+                                                                 <!-- LEAVE A COMMENT FORM-->
+                                <div class="send-comment-wrapper padding-top-80">
+  <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://filmitouch-com.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+                            </div>
+                            </div>
+                                                    <!-- SIDEBAR-->
+
+  <div class="col-md-4 col-xs-12 sidebar">
+                                <div class="sidebar-wrapper">
+                                    <div class="col-2">
+                                        <div class="banner-widget widget">
+                                            <div class="section-content">
+                                                <a href="#" class="link"><img src="assets/images/qc-images/banner-300x250.jpg" alt="" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <div class="title-topic">Social Connection</div>
+                                            <div class="content-widget">
+                                                <!-- BLOCK 3-->
+                                                <div class="block-news-3">
+                                                    <div class="block-news-content">
+            <div class="list-group">
+                <a href="" class="list-group-item visitor">
+                    <h3 class="pull-right">
+                        <i class="fa fa-eye"></i>
+                    </h3>
+                    <h4 class="list-group-item-heading count">
+                        1000</h4>
+                    <p class="list-group-item-text">
+                        Profile Views</p>
+                </a><a href="http://www.jquery2dotnet.com" class="list-group-item facebook-like">
+                    <h3 class="pull-right">
+                        <i class="fa fa-facebook-square"></i>
+                    </h3>
+                    <h4 class="list-group-item-heading count">
+                        1000</h4>
+                    <p class="list-group-item-text">
+                        Facebook Likes</p>
+                </a><a href="http://www.jquery2dotnet.com" class="list-group-item google-plus">
+                    <h3 class="pull-right">
+                        <i class="fa fa-google-plus-square"></i>
+                    </h3>
+                    <h4 class="list-group-item-heading count">
+                        1000</h4>
+                    <p class="list-group-item-text">
+                        Google+</p>
+                </a><a href="http://www.jquery2dotnet.com" class="list-group-item twitter">
+                    <h3 class="pull-right">
+                        <i class="fa fa-twitter-square"></i>
+                    </h3>
+                    <h4 class="list-group-item-heading count">
+                        1000</h4>
+                    <p class="list-group-item-text">
+                        Twitter Followers</p>
+                </a>
+            </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="category-2-widget widget">
+                                        <div class="title-topic-2">category</div>
+                                        <div class="content-widget">
+                                            <div id="category" role="tablist" aria-multiselectable="true">
+<div class="catelogy-item">
+                                                    <div class="title-wrapper"><a role="button" data-toggle="collapse" data-parent="#category" href="{% url 'health' %}" class="link collapsed">
+Health-Fitness </a><i class="icons fa fa-angle-right"></i></div>
+                                                </div>
+                                                <div class="catelogy-item">
+                                                    <div class="title-wrapper"><a role="button" data-toggle="collapse" data-parent="#category" href="{% url 'technology' %}" class="link collapsed">
+Technology </a><i class="icons fa fa-angle-right"></i></div>
+                                                </div>
+                                                <div class="catelogy-item">
+                                                    <div class="title-wrapper"><a role="button" data-toggle="collapse" data-parent="#category" href="{% url 'bollywood' %}" class="link collapsed">
+Bollywood</a><i class="icons fa fa-angle-right"></i></div>
+                                                </div>
+                                                <div class="catelogy-item">
+                                                    <div class="title-wrapper"><a role="button" data-toggle="collapse" data-parent="#category" href="{% url 'hollywood' %}" class="link collapsed">
+Hollywood</a><i class="icons fa fa-angle-right"></i></div>
+                                                 </div>
+                                                <div class="catelogy-item">
+                                                    <div class="title-wrapper"><a role="button" data-toggle="collapse" data-parent="#category" href="{% url 'sport' %}" class="link collapsed">
+Sports</a><i class="icons fa fa-angle-right"></i></div>
+                                                </div>
+                                                <div class="catelogy-item">
+                                                    <div class="title-wrapper"><a role="button" data-toggle="collapse" data-parent="#category" href="{% url 'cars' %}" class="link collapsed">
+Cars</a><i class="icons fa fa-angle-right"></i></div>
+                                                  </div>
+                                                <div class="catelogy-item">
+                                                    <div class="title-wrapper"><a role="button" data-toggle="collapse" data-parent="#category" href="{% url 'travel' %}" class="link collapsed">
+Travel</a><i class="icons fa fa-angle-right"></i></div>
+                                                  </div>
+                                                <div class="catelogy-item">
+                                                    <div class="title-wrapper"><a role="button" data-toggle="collapse" data-parent="#category" href="{% url 'fashion' %}" class="link collapsed">
+Fashion</a><i class="icons fa fa-angle-right"></i></div>
+                                                  </div>
+                                                <div class="catelogy-item">
+                                                    <div class="title-wrapper"><a role="button" data-toggle="collapse" data-parent="#category" href="{% url 'nature' %}" class="link collapsed">
+Nature</a><i class="icons fa fa-angle-right"></i></div>
+                                                  </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    {% include 'form.html' with form=form %}
+
+                                        <div class="list-news-widget widget">
+                                            <div class="title-topic">Popular Post</div>
+                                            <div class="content-widget">
+                                                <!-- BLOCK 3-->
+                                                <div class="block-news-3">
+                                                    <div class="block-news-content">
+                                                        <div class="layout-main-news">
+                                                            <div class="news-layout-1">
+                                                                <div class="news-video">
+                                                                    <a href="#" class="news-image"><img src="assets/images/normal-images/image-12.jpg" alt="" class="img-responsive"></a>
+                                                                    <div class="group-btn-video"><span class="btn-play"><i class="fa fa-play"></i></span><span class="btn-volume"><i class="fa fa-volume-off"></i></span><span class="btn-zoom"><i class="fa fa-arrows-alt"></i></span></div>
+                                                                </div>
+                                                                <div class="news-content"><a href="#" class="title">Lasik Procedures Explained Can It Help Your Blurred Vision</a>
+                                                                    <ul class="info">
+                                                                        <li><a href="#" class="link">by david hall</a></li>
+                                                                        <li><a href="#" class="link">May 15,2016</a></li>
+                                                                        <li><a href="#" class="link">25 views</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="layout-list-news">
+                                                            <div class="single-recent-post-widget">
+                                                                <div class="img-wrapper">
+                                                                    <a href="#" class="thumb"><img src="assets/images/small-images/image-28.jpg" alt="" class="img-responsive"></a>
+                                                                </div>
+                                                                <div class="post-info"><a href="#" class="title">Replication For Dummies 4 Easy Steps To Professional DVD</a>
+                                                                    <ul class="info">
+                                                                        <li><a href="#" class="link">May 15, 2016</a></li>
+                                                                        <li><a href="#" class="link">15 likes</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="single-recent-post-widget">
+                                                                <div class="img-wrapper">
+                                                                    <a href="#" class="thumb"><img src="assets/images/small-images/image-26.jpg" alt="" class="img-responsive"></a>
+                                                                </div>
+                                                                <div class="post-info"><a href="#" class="title">Cooking Recipes Anytime And Anywhere</a>
+                                                                    <ul class="info">
+                                                                        <li><a href="#" class="link">May 15, 2016</a></li>
+                                                                        <li><a href="#" class="link">15 likes</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="single-recent-post-widget">
+                                                                <div class="img-wrapper">
+                                                                    <a href="#" class="thumb"><img src="assets/images/small-images/image-27.jpg" alt="" class="img-responsive"></a>
+                                                                </div>
+                                                                <div class="post-info"><a href="#" class="title">Stu Unger Rise And Fall Of A Poker Genius</a>
+                                                                    <ul class="info">
+                                                                        <li><a href="#" class="link">May 15, 2016</a></li>
+                                                                        <li><a href="#" class="link">15 likes</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="single-recent-post-widget">
+                                                                <div class="img-wrapper">
+                                                                    <a href="#" class="thumb"><img src="assets/images/small-images/image-1.jpg" alt="" class="img-responsive"></a>
+                                                                </div>
+                                                                <div class="post-info"><a href="#" class="title">Herbal Skin Care Secrets Hidden At The Greengrocer</a>
+                                                                    <ul class="info">
+                                                                        <li><a href="#" class="link">May 15, 2016</a></li>
+                                                                        <li><a href="#" class="link">15 likes</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tags-wrapper widget">
+                                            <div class="title-topic">tags</div>
+                                            <div class="content-widget">
+                                                <ul class="list-box-tag list-inline">
+                                                    <li class="item-box-tag"><a href="#" class="box-tag">category</a></li>
+                                                    <li class="item-box-tag"><a href="#" class="box-tag">video</a></li>
+                                                    <li class="item-box-tag"><a href="#" class="box-tag">business</a></li>
+                                                    <li class="item-box-tag"><a href="#" class="box-tag">technology</a></li>
+                                                    <li class="item-box-tag"><a href="#" class="box-tag">sport</a></li>
+                                                    <li class="item-box-tag"><a href="#" class="box-tag">markets</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <!--End of SIDEBAR-->
+                        </div>
+                    </div>
+                </div>
+
+{% endblock %}

@@ -1,0 +1,112 @@
+{% extends 'base1.html' %}
+{% load static %}
+{% block title %}Contact | Filmitouch{% endblock %}
+{% block main-content %}
+                    <div class="breadcrumb-container">
+                        <div class="container">
+                            <div class="breadcrumb-wrapper">
+                                <ol class="breadcrumb">
+                                {% block breadcrumb %}
+                                    <!--<li class="breadcrumb-item"><a href="index-2.html" class="breadcrumb-link">Home</a></li>
+                                    <li class="breadcrumb-item"><span class="breadcrumb-active">Contact Us   </span></li>-->
+                                {% endblock %}
+                                </ol>
+                                <div class="breadcrumb-text">Get in touch</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-contact padding-top-40 padding-bottom-40">
+                        <div class="container">
+                            <div class="row">
+                                <div class="group-contact-info col-md-6">
+                                    <div class="title-topic">contact information</div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-xs-6">
+                                            <div class="info-container info-number">
+                                                {% block phone %}
+                                              <div class="info-icon-wrapper"><img src="{% static 'assets/images/background/ic-contact-phone-number.png' %}" alt="" class="img-responsive info-icon"></div>
+                                                <div class="info-content-wrapper">
+                                                    <p class="info-tag">phone no.</p>
+                                                    <p class="info-content detail-info-phone">+91-9415728472</p>
+                                                </div>
+                                                {% endblock %}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-xs-6">
+                                            <div class="info-container info-working-time">
+                                               {% block timing %}
+                    <div class="info-icon-wrapper"> <img src="{% static 'assets/images/background/ic-contact-working-time.png' %}" alt="" class="img-responsive info-icon"></div>
+                                                <div class="info-content-wrapper">
+                                                    <p class="info-tag">working time</p>
+                                                    <p class="info-content">everytime</p>
+                                                </div>
+                                                {% endblock %}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-xs-6">
+                                            <div class="info-container info-email">
+                                            {% block email %}
+                                                <div class="info-icon-wrapper"> <img src="{% static 'assets/images/background/ic-contact-email.png' %}" alt="" class="img-responsive info-icon"></div>
+                                                <div class="info-content-wrapper">
+                                                    <p class="info-tag">email</p>
+                                                    <p class="info-content"><a href="#" class="detail-info-email">info@examsinfo.co.in</a></p>
+                                                    <p class="info-content"><a href="#" class="detail-info-email">help@examsinfo.co.in</a></p>
+                                                </div>
+                                            {% endblock %}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-xs-6">
+                                            <div class="info-container info-address">
+                                            {% block address %}
+                                               <div class="info-icon-wrapper"> <img src="{% static 'assets/images/background/ic-contact-address.png' %}" alt="" class="img-responsive info-icon"></div>
+                                                <div class="info-content-wrapper">
+                                                    <p class="info-tag">address</p>
+                                                    <p class="info-content">A-2, K.K. Apartment, Dalibagh Near Ganna Sansthan,Lucknow,India</p>
+                                                </div>
+                                                {% endblock %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="group-contact-form col-md-6">
+                                    <div class="title-topic">contact form</div>
+                                    <p class="content-text">Any question u want to ask please send us message by filling this form.</p>
+{% if error_message %}
+    <div class="alert alert-info">
+  <strong>{{ error_message }}</strong>
+</div>
+{% endif %}
+                                {% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-success">
+  <strong>{{ message }}</strong>
+</div>
+    {% endfor %}
+{% endif %}
+     <form class="form-group contact-form" method="post">{% csrf_token %}
+<div class="row">
+        <div class="col-md-6 col-xs-6 tbx-name">
+                                                <div class="input-group">{{ form.name }}</div>
+                                            </div>
+        <div class="col-md-6 col-xs-6 tbx-email">
+                                                <div class="input-group">{{ form.email1 }}</div>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12">
+                                                <div class="input-group">{{ form.subject }}</div>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12">
+                                                <div class="input-group">{{ form.desc }}</div>
+                                            </div>
+         </div>
+         <button type="submit" class="btn btn-primary">Submit Message</button>
+
+
+     </form>
+<div>
+</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+{% endblock %}
