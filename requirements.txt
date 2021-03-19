@@ -27,7 +27,7 @@ django-storages==1.6.5
 django-tastypie==0.14.0
 django-webmaster-verification==0.3.0
 django-webtest==1.9.2
-djangorestframework==3.6.4
+djangorestframework==3.11.2
 docker-py==1.7.2
 dockerpty==0.4.1
 docopt==0.6.2
